@@ -10,5 +10,7 @@ rule cc
 rule link
   command = gcc $cflags -o $out $in -L$l1 -L$l2 -lglfw3 -lopengl32 -lgdi32
 
-build example.o: cc example.c
-build example: link example.o $g/glad.o
+build example1.o: cc example1.c
+build example2.o: cc example2.c
+build example1: link example1.o $g/glad.o
+build example2: link example2.o $g/glad.o
