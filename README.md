@@ -64,5 +64,75 @@ Press `OK` in this window, in `Environment Variables` window, as well as in `Sys
 
 Now Ninja is visible to any command shell window
 
+## Installing glfw-3.3.8
 
+This library is already installed in this repository for convenience. The whole package can be downloaded
+[here](https://www.glfw.org/download.html) and clicking on `64-bit Windows binaries`. If a new version of
+glfw is required than the whole package should be reinstalled.
+
+For simplicity, the installation of glfw-3.3.8 as provided in this repository is explained as follows.
+
+### Installing Glad
+
+Glad is an OpenGL library loader and it's used here as well as in other open source programs.
+
+Glad is already provided in this repository. All we need is to compile it. For that, go to `glad` subdirectory and
+in a command shell opened in this location, just type:
+
+```
+    ninja
+```
+
+This will read the file `build.ninja` which gives the details on how to compile Glad. It will generate
+the file `glad.o` that will be needed to be linked to any OpenGL proram using the approach shown here.
+
+### Compiling the Examples
+
+Returning to the `glfw-3.3.8` directory, one should now be able to compile the examples. For that, open
+a command shell in this location, and just type:
+
+```
+    ninja
+```
+
+### Executing the Examples
+
+One can now execute the examples by typing in the command shell:
+
+```
+    ./example1
+```
+Or by typing 
+
+```
+    ./example
+```
+
+Followed by the example number, as many as there are available.
+
+And this tests the installation. 
+
+## Changing the Installation or Installing a New Version of glfw
+
+As explained above the whole glfw package can be downloaded [here](https://www.glfw.org/download.html) and clicking on 
+`64-bit Windows binaries`. One can copy the new version in a new directory at the level of the directories `w64devkit`
+and `tools`. 
+
+The directory `glfw-3.3.8` should be conserved at least for conserving a clean copy until the new installation is
+working fine. Once the new glfw directory is copied, one should then copy all necessary files from `glfw-3.3.8` to
+this new directory. These are the example source files, `build.ninja` and the entire `glad` directory.
+
+In principle the `build.ninja` doen't need to be modified, since there are no instances of `glfw-3.3.8` in it.
+
+If one needs to change the locations of the different parts of this installation, then the `build.ninja` and
+the different paths might be required to be changed, accordingly.
+
+As can be seen, `build.ninja` files are quite simple to understand and modified.
+
+## Changing Glad
+
+Glad will also be required to change in certain cases. This can be done by generating the file based on the official 
+specs. It's set to C/C++ language by default. The `gl` version used here was 4.2 and we should make sure to also choose `core`
+compatibility. The Option `Generate a loader` also has to be checked. By clicking on `Generate` one is presented with a
+zip file containing the directoties to be copied to `glad` directory.
 
