@@ -1,0 +1,14 @@
+cflags = -O3
+i1 = include
+i2 = glad/include
+g = glad
+l1 = lib-mingw-w64
+l2 = ../w64devkit/x86_64-w64-mingw32/lib
+
+rule cc
+  command = gcc $cflags -I$i2 -I$i1 -c $in -o $out
+rule link
+  command = gcc $cflags -o $out $in -L$l1 -L$l2 -lglfw3 -lopengl32 -lgdi32
+
+build example.o: cc example.c
+build example: link example.o $g/glad.o

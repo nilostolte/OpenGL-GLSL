@@ -1,0 +1,9 @@
+cflags = -O3
+s = src
+i = include
+
+rule cc
+  command = gcc $cflags -I$i -c $in -o $out
+
+build glad.o: cc $s/glad.c
+
