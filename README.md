@@ -1,6 +1,7 @@
 # OpenGL
 
-Complete Windows 64 C/C++ development environment with OpenGL installation using w64devkit, glad and glfw3 binaries.
+Simple and complete Windows 64 C/C++ OpenGL installation and w64devkit development kit, glad and glfw3 binaries. 
+Ninja building tool. Examples.
 
 The objective of this repository is to simplify the development of OpenGL applications in C and C++. The advantage
 of using w64devkit is that it's a development kit that is portable, that is, that can be used just copying
