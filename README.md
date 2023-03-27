@@ -11,6 +11,13 @@ The development kit is used in normal command windows. To avoid typing and to si
 process the programs are built using [Ninja](https://ninja-build.org/) building tool. Ninja is a very simple
 buiding tool that substitute makefiles with several advantages, particularly of being very efficient.
 
+## How to Start
+
+Download this repository, for example, in the zip format and copy its content into an Explorer window located
+at the place chose to store the development kit as well as the other tools to be used. Keep this Explorer window
+opened for further use below. This repository contain some empty directories that are placeholders for the software 
+to be dowloaded as follows.
+
 ## Installing w64devkit
 
 This is the development kit allowing to develop C/C++ projects in Windows 64, without needing to install any Windows
@@ -40,6 +47,22 @@ The development kit is now installed and accessible in command shell windows, su
 
 ## Installing Ninja
 
+Find the latest release of Ninja [here](https://github.com/ninja-build/ninja/releases) and click on:
+
+```
+    ninja-win.zip
+```
+
+Copy `ninja.exe` from the zip file to the `tools` directory
+
+Now set a new path to the `tools` directory. 
+Go to `Control Panel > System > About > Advanced System Settings`, select `Environment Variables` 
+on `System Properties` window. In `User variables for Administrator` click on `Path` and `Edit...`. In the new window 
+`Edit environment variable` click `New`. In the Explorer window where `ninja.exe` was copied copy the path shown on the 
+top of the Explorer window and paste it in the window `Edit environment variable`, by clicking on `New` again and pasting. 
+Press `OK` in this window, in `Environment Variables` window, as well as in `System Properties`.
+
+Now Ninja is visible to any command shell window
 
 
 
