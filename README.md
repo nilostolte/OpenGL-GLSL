@@ -85,7 +85,7 @@ in a command shell opened in this location, just type:
 ```
 
 This will read the file `build.ninja` which gives the details on how to compile Glad. It will generate
-the file `glad.o` that will be needed to be linked to any OpenGL proram using the approach shown here.
+the file `glad.o` that will be needed to be linked to any OpenGL program using the approach shown here.
 
 ### Compiling the Examples
 
