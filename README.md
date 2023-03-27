@@ -136,8 +136,8 @@ As can be seen, `build.ninja` files are quite simple to understand and modified.
 
 ## Changing Glad
 
-Glad will also be required to change in certain cases. This can be done by generating the file based on the official 
-specs. It's set to C/C++ language by default. The `gl` version used here was 4.2 and we should make sure to also choose `core`
-compatibility. The Option `Generate a loader` also has to be checked. By clicking on `Generate` one is presented with a
-zip file containing the directoties to be copied to `glad` directory.
+Glad will also be required to change in certain cases. This can be done by [generating the file](https://gen.glad.sh/)
+based on the official specs. It's set to C/C++ language by default. The `gl` version used here was 4.2 and we should 
+make sure to also choose `core` compatibility. The Option `Generate a loader` also has to be checked. By clicking on 
+`Generate` one is presented with a zip file containing the directoties to be copied to `glad` directory.
 
