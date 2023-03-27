@@ -95,6 +95,9 @@ a command shell in this location, and just type:
     ninja
 ```
 
+Example 2 is a modified version of the source code shown [here](https://www.glfw.org/docs/latest/quick_guide.html). It
+uses the library `linmath.h`, which is all contained in that include file (functions are `#define` macros). This include 
+file is located [here](https://github.com/nilostolte/OpenGL/tree/main/glfw-3.3.8/include).
 ### Executing the Examples
 
 One can now execute the examples by typing in the command shell:
@@ -120,7 +123,8 @@ and `tools`.
 
 The directory `glfw-3.3.8` should be conserved at least for conserving a clean copy until the new installation is
 working fine. Once the new glfw directory is copied, one should then copy all necessary files from `glfw-3.3.8` to
-this new directory. These are the example source files, `build.ninja` and the entire `glad` directory.
+this new directory. These are the example source files, `build.ninja` and the entire `glad` directory. For example2
+one should also copy [linmath.h](https://github.com/nilostolte/OpenGL/tree/main/glfw-3.3.8/include).
 
 In principle the `build.ninja` doen't need to be modified, since there are no instances of `glfw-3.3.8` in it.
 
