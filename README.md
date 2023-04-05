@@ -22,7 +22,7 @@ to be dowloaded as follows.
 ## Installing w64devkit
 
 This is the development kit allowing to develop C/C++ projects in Windows 64, without needing to install any Windows
-tools. The advantage of this kit is it's simplicity, allowing to perfectly understand the main dependencies involved
+tools. The advantage of this kit is its simplicity, allowing to perfectly understand the main dependencies involved
 without the need of setting paths to libraries or include files.
 
 One can download it 
