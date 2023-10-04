@@ -1,4 +1,4 @@
-# OpenGL
+# OpenGL and GLSL shaders
 
 Examples (OpenGL and GLSL shaders) and  complete OpenGL installation with w64devkit development kit, glad, glfw3 binaries, and Ninja building tool.
 
