@@ -1,7 +1,6 @@
 # OpenGL
 
-Simple and complete Windows 64 C/C++ OpenGL installation and w64devkit development kit, glad and glfw3 binaries. 
-Ninja building tool. Examples.
+Examples (OpenGL and GLSL shaders) and  complete OpenGL installation with w64devkit development kit, glad, glfw3 binaries, and Ninja building tool.
 
 The objective of this repository is to simplify the development of OpenGL applications in C and C++. The advantage
 of using w64devkit is that it's a development kit that is portable, that is, that can be used just copying
@@ -12,12 +11,20 @@ The development kit is used in normal command windows. To avoid typing and to si
 process the programs are built using [Ninja](https://ninja-build.org/) building tool. Ninja is a very simple
 buiding tool that substitute makefiles with several advantages, particularly of being very efficient.
 
+In this implementation GLFW and Glad are used, and all [exemples](https://github.com/nilostolte/OpenGL/tree/main/glfw-3.3.8/examples) are to be built with C compiler using this configuration. The examples are located inside [glfw-3.3.8](https://github.com/nilostolte/OpenGL/tree/main/glfw-3.3.8) directory, because they use GLFW library. The first two examples were dowloaded from the web and modified for the installed configuration. The third example is a C++ example rewritten in C, with objective to simplify GLSL shader programming. For that a vertex shader with two triangles forming a rectangle (quad) is implemented to be used to display fragment shaders inside. 
+
+In [shaders](https://github.com/nilostolte/OpenGL/tree/main/glfw-3.3.8/examples/shaders) directory, the examples use a modified version of the third example. For example, the rectangle (quad) is expanded to the size of the viewport in order to show the fragment shaders in full window. The objective here is to implement in C, fragment shaders previously developed using web shader editors.
+
+The fragment shaders developed on [Shadertoy](https://www.shadertoy.com/) online shader editor can be used here with only few modifications.
+
 ## How to Start
 
 Download this repository, for example, in the zip format and copy its content into an Explorer window located
 at the place chose to store the development kit as well as the other tools to be used. Keep this Explorer window
 opened for further use below. This repository contain some empty directories that are placeholders for the software 
 to be dowloaded as follows.
+
+Alternatively, place the development kit somewhere else. For that, after copying this repository somewhere in the hard drive, just delete [w64devkit](https://github.com/nilostolte/OpenGL/tree/main/w64devkit) directory, and set the environment path to the complete path of "w64devkit/bin." 
 
 ## Installing w64devkit
 
@@ -32,7 +39,7 @@ One can download it
     w64devkit-1.18.0.zip
 ```
 Delete the directory `w64devkit`, download the version desired and copy `w64devkit` directory at its previous positon,
-**or** copy the contents of `w64devkit` into the existing `w64devkit` directory.
+**or** in some other place of choice.
 
 For the sake of simplification, one should set the path in order to allow the kit to be visible in a command shell
 and accessible via Ninja building tool.
@@ -41,8 +48,7 @@ For that, one needs to go to `Control Panel > System > About > Advanced System S
 on `System Properties` window. In `User variables for Administrator` click on `Path` and `Edit...`. In the new window 
 `Edit environment variable` click `New`. In the Explorer window where `w64devkit` was copied click twice on `w64devkit`, 
 and click twice on `bin`. Now copy the path shown on the top of the Explorer window and paste it in the window 
-`Edit environment variable`, by clicking on `New` again and pasting. Press `OK` in this window, in `Environment Variables` 
-window, as well as in `System Properties`.
+`Edit environment variable`, by clicking on `New` again and pasting. Press `OK` in this window, in `Environment Variables` window, as well as in `System Properties`.
 
 The development kit is now installed and accessible in command shell windows, such as in a Windows Powershell
 
@@ -99,6 +105,7 @@ a command shell in this location, and just type:
 Example 2 is a modified version of the source code shown [here](https://www.glfw.org/docs/latest/quick_guide.html). It
 uses the library `linmath.h`, which is all contained in that include file (functions are `#define` macros). This include 
 file is located [here](https://github.com/nilostolte/OpenGL/tree/main/glfw-3.3.8/include).
+
 ### Executing the Examples
 
 One can now execute the examples by typing in the command shell:
@@ -114,7 +121,11 @@ Or by typing
 
 Followed by the example number, as many as there are available.
 
-And this tests the installation. 
+And this tests the installation.
+
+In addition to these examples, Ninja will build additional examples found in [shaders](https://github.com/nilostolte/OpenGL/tree/main/glfw-3.3.8/examples/shaders) directory. These examples have more specific names as can be seen from the executable filenames. These are called in a similar way as explained above.
+
+These additional examples are for GLSL shader development, as a way to help implementing in C language, GLSL fragment shaders previously developed in online GLSL shader editors such as [Shadertoy](https://www.shadertoy.com/).
 
 ## Changing the Installation or Installing a New Version of glfw
 
