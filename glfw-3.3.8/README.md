@@ -1,3 +1,10 @@
+# To compile the examples:
+
+1) Install Ninja and set and add it to the path: https://github.com/ninja-build/ninja/releases
+
+2) In the directory of "build.ninja" call:
+ninja
+
 # GLFW binaries for 64-bit Windows
 
 This archive contains documentation, headers, pre-compiled static libraries,
