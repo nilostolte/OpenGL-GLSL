@@ -2,6 +2,8 @@ cflags = -O3
 i1 = include
 i2 = glad/include
 g = glad
+e = examples
+s = examples/shaders
 l1 = lib-mingw-w64
 l2 = ../w64devkit/x86_64-w64-mingw32/lib
 
@@ -10,7 +12,11 @@ rule cc
 rule link
   command = gcc $cflags -o $out $in -L$l1 -L$l2 -lglfw3 -lopengl32 -lgdi32
 
-build example1.o: cc example1.c
-build example2.o: cc example2.c
-build example1: link example1.o $g/glad.o
-build example2: link example2.o $g/glad.o
+build $e/example1.o: cc $e/example1.c
+build $e/example2.o: cc $e/example2.c
+build $e/example3.o: cc $e/example3.c
+build $s/circle.o: cc $s/circle.c
+build example1: link $e/example1.o $g/glad.o
+build example2: link $e/example2.o $g/glad.o
+build example3: link $e/example3.o $g/glad.o
+build circle: link $s/circle.o $g/glad.o
