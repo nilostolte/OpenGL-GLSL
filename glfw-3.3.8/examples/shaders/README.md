@@ -93,3 +93,27 @@ to the value obtained. Since the size of the pixel actually corresponds to $1/x$
 ![](https://latex.codecogs.com/svg.image?w=ax\times\frac{1}{x}&plus;b\times\frac{1}{x}=a&plus;b\times\frac{1}{x}=a&plus;b\times&space;iy)
 
 Which is passed to the function cricle in the code.
+
+### Circle with alpha blending
+
+High resolution:
+
+<img src="https://github.com/nilostolte/OpenGL-GLSL/assets/80269251/446cb3bd-5628-4b48-965f-8a81def8d29d" width=512>
+
+Detail of the antialising:
+
+<img src="https://github.com/nilostolte/OpenGL-GLSL/assets/80269251/fc86145d-cc4d-443a-bf56-bce04a8144dc" width=512>
+
+Low resolution:
+
+![image](https://github.com/nilostolte/OpenGL-GLSL/assets/80269251/1c27c57d-6b4a-485c-bebf-75caca6804bc)
+
+Detail of the antialiasing:
+
+<img src="https://github.com/nilostolte/OpenGL-GLSL/assets/80269251/e57a6cab-663f-447e-8d97-e80727a4c3ac" width=512>
+
+
+As can be seen, in practice, the real number of pixels in the antialiasing zone does not correspond to the numbers 
+used in the program. They can be seen more as numerical parameters. In any case, they were dertermined by the 
+visual effect obtained.
+
