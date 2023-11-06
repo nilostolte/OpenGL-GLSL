@@ -14,7 +14,7 @@ To implement the alpha blending, the function `circle`, instead of returning a c
 transparency (alpha value - see code below), which is then pegged to the color of the object. If the alpha value is 
 zero the content of the fragment is ignored. If it's between zero and one, the color of the object is blended with 
 what was previously displayed. If it's one, the color of the object overwrites whatever has been displayed previously. 
-This approach is betterthan used in 
+This approach is better than used in 
 [circle.c](https://github.com/nilostolte/OpenGL-GLSL/blob/main/glfw-3.3.8/examples/shaders/circle.c). However,
 it does not work on Shadertoy.
 
