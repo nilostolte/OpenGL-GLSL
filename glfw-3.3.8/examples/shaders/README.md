@@ -92,7 +92,7 @@ to the value obtained. Since the size of the pixel actually corresponds to $1/x$
 
 ![](https://latex.codecogs.com/svg.image?w=ax\times\frac{1}{x}&plus;b\times\frac{1}{x}=a&plus;b\times\frac{1}{x}=a&plus;b\times&space;iy)
 
-Which is passed to the function cricle in the code.
+Which is passed to the function circle.
 
 ### Circle with alpha blending
 
