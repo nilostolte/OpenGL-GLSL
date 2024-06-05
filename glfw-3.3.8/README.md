@@ -2,8 +2,17 @@
 
 1) Install Ninja and add it to the path: https://github.com/ninja-build/ninja/releases
 
-2) In the directory of "build.ninja" call:
+2) In the directory of "build.ninja" type:
+
+```
 ninja
+```
+
+To compile "ttf" examples (examples and demos to display Truetype glyphs) type:
+
+```
+ninja -f ttf.ninja
+```
 
 # GLFW binaries for 64-bit Windows
 
