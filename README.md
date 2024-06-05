@@ -106,26 +106,35 @@ Example 2 is a modified version of the source code shown [here](https://www.glfw
 uses the library `linmath.h`, which is all contained in that include file (functions are `#define` macros). This include 
 file is located [here](https://github.com/nilostolte/OpenGL/tree/main/glfw-3.3.8/include).
 
+Example 3 is a C++ example rewritten in C, with objective to simplify GLSL shader programming. For that a vertex shader with two triangles forming a rectangle (quad) is implemented to be used to display fragment shaders inside.
+
+In [shaders](https://github.com/nilostolte/OpenGL/tree/main/glfw-3.3.8/examples/shaders) directory, the examples use a modified version of the third example. For example, the rectangle (quad) is expanded to the size of the viewport in order to show the fragment shaders in full window. The objective here is to implement in C, fragment shaders previously developed using web shader editors.
+
+#### TrueType Glyphs Display Examples
+
+To compile these examples one uses a separate Ninja build called `ttf.minja`. To build the examples one needs to type
+
+```
+    ninja -f ttf.ninja
+```
+Notice that all Ninja build files and executable that are generated with these builds will be located in `glfw-3.3.8` directory.
+
 ### Executing the Examples
 
-One can now execute the examples by typing in the command shell:
+One can now execute the examples by calling in the command shell the correspondent executable (`.exe`) program name. For example, supposing the executable name `program.exe`, one should type:
 
 ```
-    ./example1
+    ./program
 ```
-Or by typing 
-
-```
-    ./example
-```
-
-Followed by the example number, as many as there are available.
+No executable is called `program`. Just substitude `program` by the executable names in this directory as many as there are available. 
 
 And this tests the installation.
 
 In addition to these examples, Ninja will build additional examples found in [shaders](https://github.com/nilostolte/OpenGL/tree/main/glfw-3.3.8/examples/shaders) directory. These examples have more specific names as can be seen from the executable filenames. These are called in a similar way as explained above.
 
 These additional examples are for GLSL shader development, as a way to help implementing in C language, GLSL fragment shaders previously developed in online GLSL shader editors such as [Shadertoy](https://www.shadertoy.com/).
+
+Ttf examples are more specific examples to diplay TrueType glyphs.
 
 ## Changing the Installation or Installing a New Version of glfw
 
