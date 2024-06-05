@@ -112,7 +112,7 @@ In [shaders](https://github.com/nilostolte/OpenGL/tree/main/glfw-3.3.8/examples/
 
 #### TrueType Glyphs Display Examples
 
-To compile these examples one uses a separate Ninja build called `ttf.minja`. To build the examples one needs to type
+To compile these examples one uses a separate Ninja build called `ttf.ninja`. To build the examples one needs to type
 
 ```
     ninja -f ttf.ninja
