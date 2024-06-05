@@ -6,3 +6,7 @@ https://github.com/ninja-build/ninja/releases
 
 2) In the directory of "build.ninja" call:
 ninja
+
+To compile "ttf" examples (examples and demos to display Truetype glyphs) type:
+ninja -f ttf.ninja
+
