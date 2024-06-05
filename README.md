@@ -134,7 +134,7 @@ In addition to these examples, Ninja will build additional examples found in [sh
 
 These additional examples are for GLSL shader development, as a way to help implementing in C language, GLSL fragment shaders previously developed in online GLSL shader editors such as [Shadertoy](https://www.shadertoy.com/).
 
-Ttf examples are more specific examples to diplay TrueType glyphs.
+TrueType Glyphs Display examples are more specific examples to diplay TrueType glyphs using shaders.
 
 ## Changing the Installation or Installing a New Version of glfw
 
