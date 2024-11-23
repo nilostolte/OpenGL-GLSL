@@ -4,7 +4,7 @@ Examples (OpenGL and GLSL shaders) and  complete OpenGL installation with w64dev
 
 The objective of this repository is to simplify the development of OpenGL applications in C and C++. The advantage
 of using w64devkit is that it's a development kit that is portable, that is, that can be used just copying
-the files to any device in a Windows PC (an SD card, for example). It does not require installation and bypasses
+the files to any device in a Windows PC (an SD card, for example - not advisable). It does not require installation and bypasses
 the registry.
 
 The development kit is used in normal command windows. To avoid typing and to simplify the overall development
